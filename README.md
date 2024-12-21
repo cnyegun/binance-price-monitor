@@ -1,5 +1,5 @@
 # Binance Price Monitor
-
+<img src="https://www.singulart.com/blog/wp-content/uploads/2023/10/Woman-with-a-Parasol-Madame-Monet-and-Her-Son-826x1024.jpg" alt="Woman with a Parasol - Madame Monet and Her Son" width="300"/>
 A Python script that monitors the prices of selected cryptocurrencies on Binance and sends desktop notifications when significant price changes occur.
 
 ## Features
