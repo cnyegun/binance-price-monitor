@@ -1,7 +1,6 @@
 import requests
 import json  
 import time 
-import os
 from plyer import notification
 
 
@@ -11,8 +10,8 @@ from plyer import notification
 # ====================
 TOKEN_LIST = ['BTC', 'ETH', 'W', 'JUP', 'SEI', 'JTO', 'SUI', 'STRK', 'ZK', 'ENA']
 PAIR_SYMBOL = 'USDT'
-DELAY_TIME = 5 * 60 # Seconds
-NOTICE_WHEN_DIFFER = 5 # Percent
+DELAY_TIME = 5*60 # Seconds
+NOTICE_WHEN_DIFFER = 1 # Percent
 
 # ====================
 #   GLOBAL VARIABLES
@@ -48,7 +47,6 @@ def priceNotify(symbol, pa, diff):
 
 # JSON -> Notify
 def checkVotality(current_prices):
-    os.system('clear')
     for lp, cp in zip(price_list, current_prices):
         symbol = lp['symbol']
         price_before = float(lp['price'])
