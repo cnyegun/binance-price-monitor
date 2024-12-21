@@ -58,7 +58,7 @@ NOTICE_WHEN_DIFFER = 5  # 5%
 ## Usage
 Run the script using Python:
 ```bash
-python binance.py
+python binance.py &
 ```
 ## Example Notification
 ```
