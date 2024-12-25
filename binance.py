@@ -3,14 +3,12 @@ import json
 import time 
 from plyer import notification
 
-
-
 # ====================
 # CONSTANT DEFINITIONS
 # ====================
 TOKEN_LIST = ['BTC', 'ETH', 'W', 'JUP', 'SEI', 'JTO', 'SUI', 'STRK', 'ZK', 'ENA']
 PAIR_SYMBOL = 'USDT'
-DELAY_TIME = 5*60 # Seconds
+DELAY_TIME = 300 # Seconds
 NOTICE_WHEN_DIFFER = 1 # Percent
 
 # ====================
@@ -35,7 +33,7 @@ def concatSymbols():
 def getPrice():
     getAPI = "https://data-api.binance.vision/api/v3/ticker/price?symbols=" + concatSymbols()
     response = requests.get(getAPI)
-    if response.status_code != 200: notiErr('GET failed')
+    if response.status_code != 200: print('GET failed')
     return response.json()
 
 # Float Float Float -> Notify
