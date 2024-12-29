@@ -4,7 +4,7 @@ import json
 # ====================
 # CONSTANT DEFINITIONS
 # ====================
-TOKEN_LIST = ['BTC', 'ETH', 'W', 'JUP', 'SEI', 'JTO', 'SUI', 'STRK', 'ZK', 'ENA']
+TOKEN_LIST = ['BTC', 'ETH', 'W', 'JUP', 'SEI', 'JTO', 'SUI', 'STRK', 'ZK', 'ENA', 'PEPE', 'DOGE']
 PAIR_SYMBOL = 'USDT'
 
 # ====================
